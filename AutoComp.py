@@ -1,5 +1,3 @@
-
-
 try:  # Обрабатываем все возможные ошибки
     # Импортируем необходимые библиотеки
     from telethon import TelegramClient, sync, errors
