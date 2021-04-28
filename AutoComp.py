@@ -1,4 +1,4 @@
-# -*- coding: utf-8 -*-
+
 
 try:  # Обрабатываем все возможные ошибки
     # Импортируем необходимые библиотеки
@@ -11,7 +11,7 @@ try:  # Обрабатываем все возможные ошибки
 
     def scrabThePage(page_number, complCollection):  # Функции скрабинга комплиментов со страницы сайта с комплиментами
         print('https://datki.net/komplimenti/zhenshine/page/' + str(
-            page_number) + '/')  # Сообщаем о начале скраблинга этой страницы
+            page_number) + '/')  # Сообщаем о начале скрабинга этой страницы
         page = requests.get(
             'https://datki.net/komplimenti/zhenshine/page/' + str(page_number) + '/')  # Получаем страницу
         tree = html.fromstring(page.content)  # Выстраиваем дерево блоков html
